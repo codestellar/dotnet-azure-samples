@@ -1,0 +1,23 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <p>Understanding Culture Info: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netframework-4.8">Reference link</a></p>
+
+    @{
+        // To get the Current Culture
+        CultureInfo culture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
+
+        // To get specific culture
+        //CultureInfo culture = CultureInfo.GetCultureInfo("en-US");
+        culture.NumberFormat.CurrencyNegativePattern = 1;
+    }
+
+
+    @string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:C}", -126.45);
+
+    @string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:C}", -126.45);
+</div>
