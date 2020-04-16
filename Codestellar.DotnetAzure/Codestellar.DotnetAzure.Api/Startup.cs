@@ -35,6 +35,15 @@ namespace Codestellar.DotnetAzure.Api
                         Email = "gauravmadaan@outlook.com"
                     }
                 });
+
+                // Ask Bearer Token in Header
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Bearer Token",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
             });
 
             services.AddScoped<IPersonService, PersonService>();
@@ -54,6 +63,7 @@ namespace Codestellar.DotnetAzure.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Codestellar .Net Azure V1");
             });
+
 
             app.UseHttpsRedirection();
 
