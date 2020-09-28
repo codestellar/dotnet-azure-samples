@@ -13,7 +13,7 @@ namespace Codestellar.DotnetAzure.Api.Services
         public PersonService()
         {
             var i = 0;
-            Persons = GenFu.ListOf<Person>(50);
+            Persons = GenFu.GenFu.ListOf<Person>(50);
             Persons.ForEach(person =>
             {
                 i++;

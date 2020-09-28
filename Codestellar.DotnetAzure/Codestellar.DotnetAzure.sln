@@ -17,10 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codestellar.DotNetAzure.Uni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codestellar.DotnetCore.Business", "Codestellar.DotnetCore.Business\Codestellar.DotnetCore.Business.csproj", "{A22AB73F-F159-49D0-B566-27363EF1C641}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codestellar.DotnetAzure.AADOrgAccount", "Codestellar.DotnetAzure.AADOrgAccount\Codestellar.DotnetAzure.AADOrgAccount.csproj", "{8B0BCC36-0A00-4B56-A9BA-D5C9A0C1B82C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codestellar.MyOktaClient", "Codestellar.MyOktaClient\Codestellar.MyOktaClient.csproj", "{C0072078-31F0-4AFB-A4A2-6F547E009F01}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,14 +40,6 @@ Global
 		{A22AB73F-F159-49D0-B566-27363EF1C641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22AB73F-F159-49D0-B566-27363EF1C641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22AB73F-F159-49D0-B566-27363EF1C641}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B0BCC36-0A00-4B56-A9BA-D5C9A0C1B82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B0BCC36-0A00-4B56-A9BA-D5C9A0C1B82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B0BCC36-0A00-4B56-A9BA-D5C9A0C1B82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B0BCC36-0A00-4B56-A9BA-D5C9A0C1B82C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0072078-31F0-4AFB-A4A2-6F547E009F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0072078-31F0-4AFB-A4A2-6F547E009F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0072078-31F0-4AFB-A4A2-6F547E009F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0072078-31F0-4AFB-A4A2-6F547E009F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
