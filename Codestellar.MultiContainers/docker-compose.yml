@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  codestellar.multicontainers.web:
+    image: ${DOCKER_REGISTRY-}codestellarmulticontainersweb
+    build:
+      context: .
+      dockerfile: Codestellar.MultiContainers.Web/Dockerfile
+
+  codestellar.multicontainers.api:
+    image: ${DOCKER_REGISTRY-}codestellarmulticontainersapi
+    build:
+      context: .
+      dockerfile: Codestellar.MultiContainers.Api/Dockerfile
+
