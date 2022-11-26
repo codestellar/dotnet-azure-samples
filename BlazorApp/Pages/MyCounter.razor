@@ -1,0 +1,15 @@
+﻿@page "/mycounter"
+
+<PageTitle>My Counter here</PageTitle>
+
+<p>@counter</p>
+
+<button @onclick="IncreaseCount">Click Me</button>
+
+@code{
+    private int counter = 10;
+
+    private void IncreaseCount(){
+        counter++;
+    }
+}
